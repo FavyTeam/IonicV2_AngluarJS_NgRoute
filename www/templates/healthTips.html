@@ -1,0 +1,35 @@
+<ion-view title="Health Tips" id="page10" style="">
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" ng-click="goBack()">
+            <i class="icon ion-ios-arrow-back"></i> 
+          </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" class="has-header">
+        <button class="button button-icon icon ion-android-search" ng-click="goSearch()"></button>
+    </ion-nav-buttons>
+
+    <ion-content padding="true " class="has-header ">
+        <div id="healthTips-button-bar1 " class="button-bar ">
+            <button id="healthTips-button12 " style="font-weight:lighter;font-size:12px; " class="button button-balanced button-block ">Health Tip</button>
+            <a ui-sref="meetYourDoctors " id="healthTips-button13 " style="font-weight:lighter;font-size:9px; " class="button button-positive button-block ">Meet Doctor</a>
+            <a ui-sref="askDrSpine " id="healthTips-button14 " style="font-weight:lighter;font-size:9px; " class="button button-positive button-block ">Ask Dr. Spine</a>
+        </div>
+        <div id="healthTips-container42 " ng-repeat="tip in tips ">
+            <a style="text-decoration:none !important; " ng-click="clickElement(tip.headline,tip.date,tip.header,tip.text) ">
+                <h4 id="healthTips-heading6 " style="color: rgb(0, 0, 0); ">{{tip.headline}}</h4>
+                <div id="healthTips-markdown10 " class="show-list-numbers-and-dots ">
+                    <p style="color:#000000; ">{{tip.date}}</p>
+                </div>
+                <ion-list id="healthTips-list11 ">
+                    <ion-item class="item-thumbnail-left " id="healthTips-list-item19 " style=" ">
+                        <h2>{{tip.header}}</h2>
+                        <p style="white-space:normal; ">{{tip.text}}</p>
+                    </ion-item>
+                </ion-list>
+            </a>
+            <div id="healthTips-markdown11 " class="show-list-numbers-and-dots ">
+                <p style="color:#3852D8; ">(Tap to open main story page)</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

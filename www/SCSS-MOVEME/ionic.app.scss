@@ -1,0 +1,43 @@
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+@import "../www/lib/ionic/scss";
+.top_sidebar {
+	background: none;
+	border: 0;
+}
+
+.menulistitem {
+	background: none;
+	.item-content {
+		background-color: transparent !important;
+		color: #000;
+	}
+	
+	color: #000;
+	border-color: #222;
+	border-width: 50%;
+}
+
+.questionText {
+	height: 200px;
+}
+
+body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-ios {
+	font-family: Montserrat, sans-serif;
+}
+
+body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+.ionic-body.platform-android {
+	font-family: Montserrat, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,.tab-item,input,button,select,textarea {
+	font-family: inherit;
+}
+

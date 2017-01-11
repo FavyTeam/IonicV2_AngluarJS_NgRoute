@@ -1,0 +1,86 @@
+<ion-view title="Profile" id="page8" style="background-color: rgb(9, 49, 73);">
+    <ion-nav-buttons side="right" scroll="false" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" scroll="true" class="has-header" style="color: #fff;">
+        <div class="row">
+            <div class="col-60">
+
+            </div>
+            <div class="col-40">
+                <p style="text-align: right; width: 100%;">
+                    <button class="button button-balanced button-small button-block" ng-click="singout()">LOG OUT</button>
+                </p>
+            </div>
+        </div>
+        <div ng-repeat="profile in profiles">
+            <div class="row">
+                <div class="col-50">
+                    User Name:
+                </div>
+                <div class="col-50">
+                    <p style="text-align: center;">{{profile.name}}</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-50">
+                    Email Address:
+                </div>
+                <div class="col-50">
+                    <p style="text-align: center;">{{profile.email}}</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-50">
+                    BirthDay:
+                </div>
+                <div class="col-50">
+                    <p style="text-align: center;">{{profile.birday}}</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em; margin-bottom: 1em;">
+                <div class="col-50">
+                    Gender:
+                </div>
+                <div class="col-50">
+                    <p style="text-align: center;">{{profile.gender}}</p>
+                </div>
+            </div>
+
+            <hr width='100%'></hr>
+
+            <h4 style="color: #fff;">
+                <p style="text-align: center;">Reset a Password</p>
+            </h4>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-40">
+                    Old Password:
+                </div>
+                <div class="col-60">
+                    <input placeholder="Password" type="password" ng-model="data.pwdold">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em;">
+                <div class="col-40">
+                    New Password:
+                </div>
+                <div class="col-60">
+                    <input placeholder="Password" type="password" ng-model="data.pwdnew1">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 1em; margin-bottom: 1em;">
+                <div class="col-40">
+                    Repeat Password:
+                </div>
+                <div class="col-60">
+                    <input placeholder="Password" type="password" ng-model="data.pwdnew2">
+                </div>
+            </div>
+            <div class="row">
+                <p style="text-align: right; width: 100%;">
+                    <button class="button button-balanced button-small button-block" ng-click="changePassword()">Reset Password</button>
+                </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

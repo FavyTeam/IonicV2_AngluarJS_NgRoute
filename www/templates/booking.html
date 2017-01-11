@@ -1,0 +1,77 @@
+<ion-view title="Booking" id="page13" style="">
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" ng-click="goBack()">
+            <i class="icon ion-ios-arrow-back"></i> 
+          </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" scroll="false" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <form>
+        <ion-content padding="true" scroll="true" class="has-header">
+            <div class="spacer" style="width: 300px; height: 15px;"></div>
+            <h4 id="booking-heading4" style="color: rgb(0, 0, 0); text-align: center;">Booking an Appointment</h4>
+            <div id="booking-container25" class="row">
+                <div id="booking-container26" class="col-20">
+                    <div>
+                        <img src="img/5dFpBpNHQMeK5GkNbgZG_msg1.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                    </div>
+                </div>
+                <div id="booking-container28" class="col-80">
+                    <label class="item item-input" id="booking-input14" name="fullname">
+            <input placeholder="Full Name" type="text" ng-model="data.fullname" required>
+          </label>
+                </div>
+            </div>
+            <div id="booking-container31" class="row">
+                <div id="booking-container29" class="col-20">
+                    <div>
+                        <img src="img/fZFrwVRwidWfeAk7fPAB_msg2.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                    </div>
+                </div>
+                <div id="booking-container30" class="col-80">
+                    <label class="item item-input" id="booking-input15" name="phonenumber">
+            <input placeholder="Phone Number" type="tel" ng-model="data.tel" required>
+          </label>
+                </div>
+            </div>
+            <div id="booking-container34" class="row">
+                <div id="booking-container32" class="col-20">
+                    <div>
+                        <img src="img/m1t5wW1QQW8xd3uvMg0d_msg3.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                    </div>
+                </div>
+                <div id="booking-container33" class="col-80">
+                    <label class="item item-input" id="booking-input16" name="fullname">
+            <input placeholder="Email Address" type="email" ng-model="data.email" required>
+          </label>
+                </div>
+            </div>
+            <div id="booking-container37" class="row">
+                <div id="booking-container35" class="col-20">
+                    <div>
+                        <a style="display:block;">
+                            <img src="img/PW5hxj7vTlWXFvuzuAUq_msg4.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                        </a>
+                    </div>
+                </div>
+                <div id="booking-container36" class="col-80">
+                    <label class="item item-input" id="booking-input17" name="Appointment Date">
+            <input type="text" placeholder="Appointment Date" ng-model="data.date" required>
+                    </label>
+                </div>
+            </div>
+            <div id="booking-container40" class="row">
+                <div id="booking-container38" class="col-20">
+                    <div>
+                        <img src="img/m8LciNzS7yEjMGJtncVg_msg5.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+                    </div>
+                </div>
+                <div id="booking-container39" class="col-80">
+                    <textarea placeholder="Message" style="width: 100%; height: 200px; border: 5px;" ng-model="data.msg" required></textarea></label>
+                </div>
+            </div>
+            <input class="button button-block button-positive  button-block" type="submit" name="submit" value="SEND MESSAGE" ng-click="send()">
+    </form>
+    </ion-content>
+</ion-view>

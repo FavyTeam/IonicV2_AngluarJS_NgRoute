@@ -1,0 +1,28 @@
+<ion-view title="Answers" id="page16">
+    <ion-nav-buttons side="right" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <h3 id="viewAnswers-heading7" style="color:#000000;font-weight:300;text-align:center;">USER-DOCTOR PLATFORM</h3>
+        <div class="spacer" style="height: 20px;"></div>
+
+        <!-- Element start -->
+
+        <div ng-repeat="que in ques">
+            <a style="text-decoration:none !important;" ng-click="clickElement(que.text,que.answer)">
+                <ion-list id="viewAnswers-list5">
+                    <ion-item ng-class="que.classes">
+                        <i ng-class="que.avator"></i>{{que.text}}
+                        <i ng-class="que.iconClass"></i>
+                    </ion-item>
+                </ion-list>
+                <div id="viewAnswers-markdown16" style="text-align:center;" class="show-list-numbers-and-dots">
+                    <p ng-style="que.style">{{que.answer}}</p>
+                </div>
+                <div class="spacer" style="height: 10px;"></div>
+            </a>
+        </div>
+
+        <!-- Element end -->
+    </ion-content>
+</ion-view>

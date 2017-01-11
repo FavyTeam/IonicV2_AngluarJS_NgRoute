@@ -1,0 +1,18 @@
+<ion-view title="News and Events" id="page14" style="">
+    <ion-nav-buttons side="left">
+        <button class="button back-button buttons button-clear header-item" ng-click="goBack()">
+            <i class="icon ion-ios-arrow-back"></i> 
+          </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <div ng-repeat="new in news">
+            <h3>{{new.header}}</h3>
+            <p>{{new.text}}</p>
+            <p>{{new.date}}</p>
+            <br>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view title="About Dr. Spine" id="page5" style="background-color: rgb(9, 49, 73);">
+    <ion-nav-buttons side="right" scroll="false" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" scroll="true" class="has-header">
+        <div ng-repeat="about in abouts">
+            <h2 id="aboutDrSpine-heading3" style="color: rgb(255, 255, 255); font-weight: 400; text-align: center;">{{about.name}}</h2>
+            <div>
+                <img src="img/4FYmpsERekBwcOIbT1Pg_background.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="spacer" style="height: 20px;"></div>
+            <p style="text-align: center; color: #fff;">{{about.spec}}</p>
+            <div class="spacer" style="height: 20px;"></div>
+            <div id="aboutDrSpine-markdown4" class="show-list-numbers-and-dots">
+                <p style="color:#FFFFFF;">{{about.text}}</p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

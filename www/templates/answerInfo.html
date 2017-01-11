@@ -1,0 +1,30 @@
+<ion-view title="Answer Info" id="page17">
+    <ion-nav-buttons side="right" class="has-header">
+        <button class="button button-icon icon ion-android-search"></button>
+    </ion-nav-buttons>
+    <ion-content padding="true" class="has-header">
+        <h2 id="answerInfo-heading8" style="color:#129AE7;font-weight:400;text-align:center;">Answer Info</h2>
+        <div ng-repeat="info in infos">
+            <div id="answerInfo-markdown30" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;font-size:22px;">Subject</p>
+            </div>
+            <div id="answerInfo-markdown18" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;">{{info.subject}} </p>
+            </div>
+            <div class="spacer" style="height: 20px;"></div>
+            <div id="answerInfo-markdown34" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;font-size:22px;">Question</p>
+            </div>
+            <div id="answerInfo-markdown19" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;">{{info.question}} </p>
+            </div>
+            <div class="spacer" style="height: 20px;"></div>
+            <div id="answerInfo-markdown20" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;font-size:22px;">Answer</p>
+            </div>
+            <div id="answerInfo-markdown21" style="text-align:center;" class="show-list-numbers-and-dots">
+                <p style="color:#000000;">{{info.answer}} </p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
